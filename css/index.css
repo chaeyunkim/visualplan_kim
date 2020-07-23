@@ -1,42 +1,8 @@
 @charset "utf-8";
-*{margin:0; padding:0; box-sizing:border-box;}
-a{color:inherit; text-decoration:none;}
-img{max-width:100%; vertical-align:middle; border:none;}
-ul{list-style:none;}
-.row{max-width:1142px; margin:0 auto;}
-.cf:after{content:''; display:block; clear:both;}
-.blind{width:0; height:0; position:absolute; text-indent:-9999px; font-size:0px; overflow:hidden;}
+@import "reset.css";
+@import "common.css";
 
-h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal;}
-table{width:100%; table-layout:fixed;}
 
-#header{position: fixed; width: 100%; background: #fff; box-shadow: 0px 5px 20px rgba(0,0,0,0.1); z-index: 99;}
-/*position-fixed와 absolute에서 위치나 넓이를 지정하지 않으면 기존에 지정했던 넓이가 content 넓이로 바뀜*/
-/*z-index는 */
-
-.topmenu{text-align:right; font-size: 11px; font-family: '나눔고딕'; color: rgba(0,0,0,0.6); padding: 9px 0px;}
-.topmenu a{padding:0px 11px; position: relative;}
-/* .topmenu a:first-child{border: none;} */
-/* .topmenu a:last-child{border: none;} */
-.topmenu a:before{content:""; width:1px; height:7px; background: #ccc;position: absolute; left:0; top:50%; transform: translateY(-50%);}
-.topmenu a:first-child:before{display:none;}
-.topmenu a:hover{color:rgba(0,0,0,0.8);}
-
-.h1NavWrap{border-top:1px solid #dedede;}
-.h1Nav{position:relative; height:103px;}
-.h1Nav h1{font-size:30px; color:#000; line-height:1; padding-top:25px;}
-.h1Nav h1 span{font-size:14px; color:rgb(83, 83, 83); display:block; letter-spacing:3.6px;}
-.h1Nav .nav{position:absolute; top:0; right:0;}
-.h1Nav .nav .depth1>li{display:inline-block; position:relative;}
-.h1Nav .nav .depth1>li>a{display:block; padding:0 50px; margin-top:40px; font-size:17px; color:#666; font-family:'나눔고딕'; font-weight: bold; /* border-left: 1px solid #ccc;} */ position:relative;}
-.h1Nav .nav .depth1>li>a:before{content: "";width: 1px; height: 10px; background: #ccc; position: absolute; left: 0; top:50%; transform: translateY(-50%);} 
-/*after 붙으면 반드시 content:""; 부터 입력. .h1Nav .nav .depth1>li:first-child>a{border: none;} first-child는 형제관계만 가능하니 주의 */
-.h1Nav .nav .depth1>li:first-child>a:before{display: none;}
-.nav .depth2{position: absolute; top:100%; left: 0; width: 100%; background:#fff; padding:15px 25px; display:none;}
-.nav .depth1>li:hover .depth2{display:block; transition:all 1s; opacity: 0.9;}
-.nav .depth2>li{line-height:31px; font-size:13px; text-align:center; color:rgba(0, 0, 0, 0.6); border-top:1px solid rgba(0, 0, 0, 0.15); transition:all 1s;}
-.nav .depth2>li:hover{color:rgba(0, 0, 0, 0.25); text-indent:1.5em;}
-.nav .depth2>li:first-child{border:none;}
 
 #section{padding-top: 135px;}
 .slideOuter{position: relative;}
@@ -115,28 +81,3 @@ table{width:100%; table-layout:fixed;}
 .cscenter .gobox{padding:0 15px;}
 /* .cscenter>.gobox:nth-child(1) img{border-right:1px solid #d9d9d9;} */
 
-#footer{background:#111;}
-#footer .companyInfo{float:left;}
-#footer .sns{float:right;}
-
-
-.goTop{font-size:30px;}
-.goTop .img{width: 100%; transition: all 0.5s;}
-.goTop .imgbox{position:relative; overflow: hidden;}
-.goTop .overlay{position: absolute; left: 0; bottom: 0; right: 0; background: rgba(0,0,0,0.5); opacity: 0; transition: all 0.5s;}
-
-.goTop .imgbox:hover .overlay{opacity: 1;}
-.gobox .imgbox:hover img{transform: scale(1.2);}
-.gobox  
-.cscenter .gobox a{display:block; text-align: center; color: #666;}
-.cscenter .gobox h3{font-size: 17px; color: rgba(0,0,0,0.3); padding: 15px 0px;}
-.cscenter .gobox p{font-size:13px ; line-height: 1.5;}
-
-
-
-
-
-
-
-.loadBox{display:none; position:fixed; left:0; top:0; bottom:0; right:0; background:#fff; z-index:9999999;}
-.loadBox i{font-size:80px; position:absolute; top:40%; right:50%; transform:translate(-50%, -50%);}
