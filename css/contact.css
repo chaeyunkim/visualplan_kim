@@ -4,5 +4,23 @@
 
 #contact_section{padding-top:135px;}
 #contact_section .contact_box{text-align: center; padding:100px 0;}
-#contact_section .contact_box h2{padding:20px 0;}
-.w160{width: 300px;}
+#contact_section .contact_box h2{padding:20px 0; font-size:38px; color:#222; font-weight:normal;}
+
+#contact_section .contact_form{padding-top:50px;}
+#contact_section .contact_form .contact_width{width:555px; margin:0 auto;}
+#contact_section .contact_form .contact_width label{display:block; text-align:left; font-size:14px; color:#333; font-weight:bold;}
+#contact_section .contact_form .contact_width input, 
+#contact_section .contact_form .contact_width select, 
+#contact_section .contact_form .contact_width textarea
+{display: block; width:100%; height:54px; line-height: 54px; border:none; border-radius:5px; background:#f8f9fa; color:#777; margin:10px 0; padding:0 10px;}
+#contact_section .contact_form .contact_width input[type=file]{background:none; vertical-align:;}
+
+
+
+
+
+
+/*문의하기 버튼*/
+#contact_section .contact_form button{margin:30px 0;}
+#contact_section .contact_form button[type=submit]{background:#3e78ff; color:#fff; font-size:17px; width:272px; height:58px; border-radius:5px;}
+#contact_section .contact_form button[type=reset]{background:#adb5bd; color:#fff; font-size:17px; width:272px; height:58px; border-radius:5px;}
