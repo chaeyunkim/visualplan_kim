@@ -15,7 +15,7 @@
 #contact_section .contact_form .contact_width textarea{display: block; width:100%; border:none; border-radius:5px; background:#f8f9fa; color:#777; margin:10px 0; padding:0 10px; height: 130px;}
 /* #contact_section .contact_form .contact_width input[type=file]{background:none; height: auto;} */
 
-#contact_section .contact_form .contact_width #contact_file{background:none; height: auto; padding:0; }
+#contact_section .contact_form .contact_width #contact_file{background:none; height: auto; padding:0;  line-height:24px;}
 
 
 
